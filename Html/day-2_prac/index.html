@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Audio and Html Forms</title>
+</head>
+
+<body>
+    <h1>Welcome to Day2🔥</h1>
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="./audio.mp3" type="audio/mp3" />
+        this browser does not support audio
+    </audio>
+
+
+    <!-- Forms -->
+    <form action="#" method="post">
+        <!-- 
+       1. fullname
+       2. username
+       3. email
+       4. password
+       5. confirm password
+       6. gender
+       7. date of birth
+        8. phone number
+        9. age in slider
+        10. button
+       -->
+
+        <label>FullName:</label>
+        <input type="text" placeholder="Enter Your Fullname" />
+        <br>
+
+        <label >Username:</label>
+        <input type="text" placeholder="@jhon-doe234" />
+        <br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="jhonDoe@example.com" />
+        <br>
+
+        <label>Password</label>
+        <input type="password" placeholder="***********" />
+        <br>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="***********" />
+        <br>
+
+
+        <lable>Gender</lable>
+
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" id="others" />
+        <label for="others">Others</label>
+
+        <br>
+
+        <label>Date of Birth</label>
+        <!-- <input
+        type="date"
+        /> -->
+        <input
+        type="datetime-local"
+        />
+
+        <br>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="123-456-7890" />
+
+        <br>
+
+        <label>Age</label>
+        <input
+        type="range"
+        min="16"
+        max="100"
+        />
+        <br>
+       <input
+       type="submit"
+       />
+
+    </form>
+
+</body>
+
+</html>

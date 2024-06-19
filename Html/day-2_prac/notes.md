@@ -35,7 +35,7 @@ HTML forms are used to collect user input. They are defined using the `<form>` t
 #### Basic Structure of a Form
 
 ```html
-<form action="submit_form.php" method="post">
+<form action="#" method="post">
     <!-- Form elements go here -->
 </form>
 ```
