@@ -54,6 +54,176 @@ Tables are used to display tabular data in HTML. The main tags used in tables ar
 
 - **`border`**: Attribute added to `<table>` to create a border around the table and cells.
 
+### Advanced Table Structure: `<thead>`, `<tbody>`, and `<tfoot>`
+
+To enhance the readability and structure of tables, HTML provides the `<thead>`, `<tbody>`, and `<tfoot>` elements. These elements are used to group different parts of a table, making it easier to manage and style them.
+
+#### Basic Structure with `<thead>`, `<tbody>`, and `<tfoot>`
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Table Example</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>30</td>
+                <td>Engineer</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>25</td>
+                <td>Designer</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">End of Table</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+```
+
+- **`<thead>`**: Defines a group of header rows in the table. Typically contains `<tr>` elements with `<th>` cells.
+- **`<tbody>`**: Defines the main body of the table. Contains `<tr>` elements with `<td>` cells.
+- **`<tfoot>`**: Defines a group of footer rows in the table. Typically contains `<tr>` elements with `<td>` cells.
+- **`colspan`**: Attribute used in `<td>` to span the cell across multiple columns.
+
+### Detailed Explanation of Attributes Used
+
+- **`table`**:
+  - **`width="100%"`**: Sets the width of the table to 100% of its container.
+  - **`border-collapse: collapse;`**: Collapses the borders into a single border.
+  
+- **`th, td`**:
+  - **`border: 1px solid black;`**: Adds a 1-pixel solid black border around the table cells.
+  - **`padding: 8px;`**: Adds 8 pixels of padding inside the table cells.
+  - **`text-align: left;`**: Aligns the text to the left inside the table cells.
+  
+- **`thead`**:
+  - **`background-color: #f2f2f2;`**: Sets a light gray background color for the table header.
+  
+- **`tfoot`**:
+  - **`background-color: #f9f9f9;`**: Sets a light gray background color for the table footer.
+  - **`font-weight: bold;`**: Makes the text bold in the table footer.
+
+### More Complex Example
+
+Here’s a more comprehensive example demonstrating a more complex table structure:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complex Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        thead {
+            background-color: #f4f4f4;
+        }
+        tfoot {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complex Table Example</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>30</td>
+                <td>Engineer</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>25</td>
+                <td>Designer</td>
+                <td>San Francisco</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>28</td>
+                <td>Developer</td>
+                <td>Chicago</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Records: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+```
+
+In this example:
+
+- **`<thead>`** is used to group the header content of the table.
+- **`<tbody>`** contains the main content (rows) of the table.
+- **`<tfoot>`** is used to group the footer content of the table, which can include summary information.
+
+### Practical Benefits
+
+- **Readability**: Separating the table into `<thead>`, `<tbody>`, and `<tfoot>` makes the table more readable and easier to maintain.
+- **Styling**: These elements allow for easier and more targeted CSS styling.
+- **Accessibility**: Improves the accessibility of the table by making it clear where the header, body, and footer of the table are, which helps screen readers and other assistive technologies understand the structure of the table.
+
+Using `<thead>`, `<tbody>`, and `<tfoot>` tags appropriately can greatly enhance the usability and maintainability of your tables in HTML.
+
 ### Semantic Tags
 
 Semantic tags provide meaning to the structure of the web page, improving both accessibility and SEO.
