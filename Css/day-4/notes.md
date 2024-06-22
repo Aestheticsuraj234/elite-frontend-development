@@ -1,5 +1,5 @@
 
-There are three primary ways to include CSS in HTML:
+### There are three primary ways to include CSS in HTML:
 
 1. **Inline CSS**
 2. **Internal CSS**
