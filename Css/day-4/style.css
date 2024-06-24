@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /* external css
 
 /* type selector */
@@ -23,7 +26,7 @@
 } */
 
 
-
+/* 
 h1{
     color:red;
 }
@@ -31,4 +34,52 @@ h1{
 
 .heading_1{
     color:blue;
+} */
+
+
+/* box-model */
+
+/* 1. content
+   2. Padding 
+   3. margin
+   4. border
+*/
+.box{
+    height:200px;
+    width:300px;
+    border: 10px dotted green ;
+    /* border-style: solid;
+    border-width: 12px;
+    border-color:brown;
+    border-left-style:solid;*/
+    border-radius: 20px; 
+
+
+    /* 1-ways ( shot hand property) */
+    /* top right bottom left  */
+
+    /* padding: 20px 30px 40px 30px ;   */
+    padding: 20px; 
+    /* learn more about padding properties */
+    /* padding-top: 20px; */
+
+
+    /** margin */
+     /* /* 1-ways ( shot hand property) */
+     margin: 150px 200px 0px 100px;
+     /* learn more about margin-- */
+
+     /* basic styling  */
+
+     /* 1 fonts */
+
+     font-family: 'Courier New', Courier, monospace  ;
+     font-size: 14px;
+     font-weight: 900;
+    font-style: italic;
+
+    color:brown
+
+
+
 }
