@@ -289,3 +289,104 @@ Example:
 ```
 
 These detailed explanations should provide a clearer understanding of CSS syntax, selectors, the box model, and basic styling, enabling you to apply styles to HTML elements more effectively.
+
+
+### Specificity in CSS
+
+CSS specificity is a set of rules applied by browsers to determine which CSS rule is applied by the browsers when multiple rules could apply to the same element. The specificity is based on the matching rules which are given weights based on the type of selectors used in the rule. 
+
+#### Specificity Calculation
+
+1. **Inline Styles**: Inline styles have the highest specificity. Example: `<div style="color: red;"></div>`
+
+2. **IDs**: ID selectors have a high specificity. Example: `#header`
+
+3. **Classes, attributes, and pseudo-classes**: These selectors have a lower specificity than IDs. Examples: `.menu`, `[type="text"]`, `:hover`
+
+4. **Elements and pseudo-elements**: These have the lowest specificity. Examples: `h1`, `p`, `::before`, `::after`
+
+5. **Universal selector, combinators, and negation pseudo-class**: These have no specificity. Examples: `*`, `>`, `+`, `~`, `:not()`
+
+#### Specificity Hierarchy
+
+- Inline styles (`a=1, b=0, c=0, d=0`)
+- IDs (`a=0, b=1, c=0, d=0`)
+- Classes, attributes, and pseudo-classes (`a=0, b=0, c=1, d=0`)
+- Elements and pseudo-elements (`a=0, b=0, c=0, d=1`)
+
+#### Specificity Calculation Example
+
+Consider the following rules and an element:
+
+```css
+/* Rule 1 */
+div p {
+    color: blue;
+}
+
+/* Rule 2 */
+#main p {
+    color: green;
+}
+
+/* Rule 3 */
+.container .content p {
+    color: red;
+}
+```
+
+- `div p`: (0, 0, 0, 2)
+- `#main p`: (0, 1, 0, 1)
+- `.container .content p`: (0, 0, 2, 1)
+
+When all three rules apply to the same `p` element, the rule with the highest specificity wins. In this case, `#main p` will apply because its specificity (0, 1, 0, 1) is higher than the others.
+
+### Inheritance in CSS
+
+Inheritance is a mechanism by which some CSS property values applied to an element are passed on to its descendants. 
+
+#### Inheritable Properties
+
+Some CSS properties are naturally inheritable, such as:
+
+- `color`
+- `font-family`
+- `font-size`
+- `visibility`
+
+Non-inheritable properties need to be explicitly inherited using the `inherit` keyword if desired.
+
+#### Example of Inheritance
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: blue;
+        }
+        .child {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p class="child">This text is blue and 20px in size.</p>
+        <p>This text is blue but has the default font size.</p>
+    </div>
+</body>
+</html>
+```
+
+In the above example, the `color` property is inherited by the `p` elements from the `body`. The `font-size` is applied only to elements with the class `child`.
+
+### Summary
+
+- **Specificity**: Determines which CSS rule is applied when multiple rules could apply. Calculated based on the types of selectors used.
+- **Inheritance**: Some CSS properties are passed down from parent elements to their children. Properties can also be explicitly inherited using the `inherit` keyword.
