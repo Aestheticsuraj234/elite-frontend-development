@@ -316,6 +316,7 @@ CSS specificity is a set of rules applied by browsers to determine which CSS rul
 
 #### Specificity Calculation Example
 
+
 Consider the following rules and an element:
 
 ```css
