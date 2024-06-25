@@ -1,5 +1,67 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/* body{
+    height: 200vh;
+    /* background-color: gray; */
+    /* background-image: url("./bg-img.jpg");
+    background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat:round; */
+
+    /* background-size: cover; */
+   /* background-size: contain; */
+
+   /* background-attachment: fixed; */
+   /* background-attachment: scroll; */
+   /* background-attachment:local; */
+
+    /* background-position: center; assignment */
+
+
+/* 
+} */
+
+/* html{
+    font-size:40px;
+} */
+
+/* .container{
+    background-color: rgba(255, 255, 255,0.4);
+    height: 40vh;
+    width: 80vw;
+    margin:20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding:20px;
+
+    /* color: coral;  */
+
+    /* hex - 3digit , 6digit */
+    /* color:#dcea1a; */
+
+    /* rgb (r=255 , g=255 , b=255) */
+    /* color:rgb(230, 233, 27); */
+
+    /* 
+    rgba (r=255 , g=255 , b=255 , a=0-1)
+    */
+/* } */ 
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+}
+
+
+
+.parent{
+height: 50%;
+width:50%;
+border: 1px solid black;
+background-color: pink;
 }

@@ -1,5 +1,20 @@
 ### **Background Images and Colors**
 
+
+**Background Short Hand**
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+```css
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+```
+
 **Background Colors:**
 
 You can set the background color of an element using the `background-color` property in CSS. Colors can be defined in various ways: by name, hexadecimal code, RGB, or RGBA.
