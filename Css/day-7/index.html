@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox in Css</title>
+
+    <style>
+
+        .container {
+            display: flex;
+            height: 100px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+          }
+          .item {
+            padding: 10px;
+            background: lightgoldenrodyellow;
+            border: 1px solid #000;
+          }
+
+        .container1{
+            height:80vh;
+            background-color: bisque;
+            border:1px solid black;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            
+             
+        }
+
+        .box{
+            color:white;
+       height: 80px;
+            width:80px;
+            border:1px solid brown;
+            border-radius:12px;
+            margin:10px;
+        }
+        #box-1{
+            background-color: red;
+        }
+        #box-2{
+            background-color: green;
+        }
+        #box-3{
+            background-color: blue;
+        }
+        #box-4{
+            background-color: yellow;
+        }
+        #box-5{
+            background-color: purple;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="align-self: flex-end;">1</div>
+       
+      </div>
+      
+      
+</body>
+</html>
