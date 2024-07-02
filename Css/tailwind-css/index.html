@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind-css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="h-[5rem] bg-[#000000] flex flex-row justify-between items-center py-3 px-[5rem] ">
+        <!-- left-div -->
+        <div class="flex justify-center items-center gap-3">
+            <img src="./logo.svg" alt="Logo" height="150" width="150" />
+            <span class="text-3xl text-white">|</span>
+            <span class="text-[#ffffff] text-2xl hover:underline">Help-Center</span>
+        </div>
+        <!-- right-div -->
+        <div class="flex justify-center items-center gap-4">
+            <button
+                class="px-6 py-2 border-2 flex justify-center items-center border-white rounded-lg text-white text-xl ">
+                Submit a Request
+            </button>
+            <button class="px-4 py-2 bg-indigo-500 justify-center items-center  rounded-lg text-white text-xl">
+                Sign in
+            </button>
+        </div>
+    </nav>
+    <!-- hero-section -->
+    <section class="h-[60vh] bg-[#dadbf1] flex justify-center items-center gap-4 flex-col">
+        <h1 class="text-[5rem] font-bold">How can we help?</h1>
+
+        <div class="relative w-[60%] hover:text-indigo-500">
+            <input placeholder="Search..." type="text"
+                class="w-full px-4 py-5 border border-indigo-500 rounded-lg shadow-lg hover:shadow-xl transition-all">
+            <span class="text-4xl absolute right-4 top-3  ">&rarr;</span>
+        </div>
+
+    </section>
+
+    <!-- feature-section -->
+
+    <section class="h-[100vh] bg-white mt-10">
+        <div class="px-24 py-24 flex flex-col justify-center items-center gap-y-[5rem] ">
+
+
+            <!-- top-container -->
+            <div class="flex justify-center items-center gap-6  mx-6">
+                <!-- left-div -->
+                <div class="flex  justify-start items-center gap-6 ">
+
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D4GACXWCRKK6JHQ730XD" alt="feat-1"
+                        height="100" width="100">
+
+                    <div class="flex flex-col justify-center items-start gap-y-4">
+                        <h1 class="text-3xl font-bold">Using Abstract</h1>
+                        <p class="text-lg font-normal  w-[60%]">
+                            Abstract lets you manage, version, and document your designs in one place.
+                        </p>
+                        <span class="text-blue-500 text-lg hover:underline ">Learn More &rarr;</span>
+                    </div>
+
+                </div>
+
+                <div class="flex  justify-start items-center gap-6 ">
+
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D45NKFCN3388ZCBJB878" alt="feat-1"
+                        height="100" width="100">
+
+                    <div class="flex flex-col justify-center items-start gap-y-4">
+                        <h1 class="text-3xl font-bold">
+                            Manage your account</h1>
+                        <p class="text-lg font-normal  w-[60%]">
+                            Configure your account settings, such as your email, profile details, and password
+                        </p>
+                        <span class="text-blue-500 text-lg hover:underline ">Learn More &rarr;</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-6  mx-6">
+                <!-- left-div -->
+                <div class="flex  justify-start items-center gap-6 ">
+
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3M8CRR0C2V5GREVR6HK" alt="feat-1"
+                        height="100" width="100">
+
+                    <div class="flex flex-col justify-center items-start gap-y-4">
+                        <h1 class="text-3xl font-bold">Manage organizations, teams, and projects</h1>
+                        <p class="text-lg font-normal  w-[60%]">
+                            Use Abstract organizations, teams, and projects to organize your people and your work.
+                        </p>
+                        <span class="text-blue-500 text-lg hover:underline ">Learn More &rarr;</span>
+                    </div>
+
+                </div>
+
+                <div class="flex  justify-start items-center gap-6 ">
+
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D38K1S1M9WKWSQZE62YE" alt="feat-1"
+                        height="100" width="100">
+
+                    <div class="flex flex-col justify-center items-start gap-y-4">
+                        <h1 class="text-3xl font-bold">
+                            
+Manage billing</h1>
+                        <p class="text-lg font-normal  w-[60%]">
+                            Change subscriptions and payment details
+                        </p>
+                        <span class="text-blue-500 text-lg hover:underline ">Learn More &rarr;</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-6  mx-6">
+                <!-- left-div -->
+                <div class="flex  justify-start items-center gap-6 ">
+
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3S3QY5190TZE3H8ZSVK" alt="feat-1"
+                        height="100" width="100">
+
+                    <div class="flex flex-col justify-center items-start gap-y-4">
+                        <h1 class="text-3xl font-bold">Authenticate to Abstract</h1>
+                        <p class="text-lg font-normal  w-[60%]">
+                            Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+                        </p>
+                        <span class="text-blue-500 text-lg hover:underline ">Learn More &rarr;</span>
+                    </div>
+
+                </div>
+
+                <div class="flex  justify-start items-center gap-6 ">
+
+                    <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3G4S2K93BN3WJPT8600" alt="feat-1"
+                        height="100" width="100">
+
+                    <div class="flex flex-col justify-center items-start gap-y-4">
+                        <h1 class="text-3xl font-bold">
+                            Abstract support
+                        </h1>
+                        <p class="text-lg font-normal  w-[60%]">
+                            Get in touch with a human.
+                        </p>
+                        <span class="text-blue-500 text-lg hover:underline ">Learn More &rarr;</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
