@@ -31,7 +31,7 @@ console.log(lastFruit); // "Cherry"
 console.log(fruits);    // ["Apple", "Banana"]
 ```
 
-#### `shift()`
+#### `shift()` ---assignment
 
 Removes the first element from an array and returns that element.
 
@@ -42,7 +42,7 @@ console.log(firstFruit); // "Apple"
 console.log(fruits);     // ["Banana", "Cherry"]
 ```
 
-#### `unshift()`
+#### `unshift()` ----assignment
 
 Adds one or more elements to the beginning of an array and returns the new length of the array.
 
@@ -54,7 +54,7 @@ console.log(fruits); // ["Apple", "Banana", "Cherry"]
 
 #### `slice()`
 
-Returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included). The original array will not be modified.
+Returns a  copy of a portion of an array into a new array object selected from start to end (end not included). The original array will not be modified.
 
 ```javascript
 let fruits = ["Apple", "Banana", "Cherry", "Date"];
