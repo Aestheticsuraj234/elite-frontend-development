@@ -104,35 +104,35 @@
 // console.log(true || true);
 // console.log(false || false)
 
-// - Logical NOT (!)
-console.log(!true)
-console.log(!false)
+// // - Logical NOT (!)
+// console.log(!true)
+// console.log(!false)
 
 
-// 4. Assignment Operators
+// // 4. Assignment Operators
 
-// - Assignment (=)
-let Name = "Amit";
-// - Addition Assignment (+=)
-let Marks = 99;
-Marks += 1;
-console.log(Marks);
+// // - Assignment (=)
+// let Name = "Amit";
+// // - Addition Assignment (+=)
+// let Marks = 99;
+// Marks += 1;
+// console.log(Marks);
 
-// - Subtraction Assignment (-=)
-// - Multiplication Assignment (*=)
-// - Division Assignment (/=)
-
-
-
-//? 5. Conditional (Ternary) Operator
-//! 6. Bitwise Operators
-//! 7. Special Operators
+// // - Subtraction Assignment (-=)
+// // - Multiplication Assignment (*=)
+// // - Division Assignment (/=)
 
 
 
+// //? 5. Conditional (Ternary) Operator
+// //! 6. Bitwise Operators
+// //! 7. Special Operators
 
-// typeOf 
 
-let ex = true;
 
-console.log( typeof ex);
+
+// // typeOf 
+
+// let ex = true;
+
+// console.log( typeof ex);
