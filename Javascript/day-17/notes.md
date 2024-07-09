@@ -1,7 +1,3 @@
-Certainly! Here's a more detailed and informational version of the handwritten notes on programming with objects and JSON:
-
----
-
 ## Handwritten Notes: Programming with Objects and JSON
 
 ### Objects and Properties
