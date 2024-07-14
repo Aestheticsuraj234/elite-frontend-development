@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Practice</title>
+
+    <style>
+        
+    
+        div {
+            padding: 20px;
+            border: 1px solid black;
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Bubbling and Capturing phase</h1>
+
+    <div>
+      <button class="child">click me</button>
+    </div>
+
+    <script>
+      const parent = document.querySelector("div");
+      const child = document.querySelector(".child");
+      const h1 = document.querySelector("h1");
+   
+ 
+      parent.addEventListener("click", function (e) {
+        console.log("clicked parent");
+      },false);
+
+      child.addEventListener("click", function (e) {
+         e.preventDefault();   
+        console.log("clicked child");
+      },false);
+
+    </script>
+
+  </body>
+</html>
+
+
+
+<!-- 
+
+         RESULTS OF THE ABOVE CODE
+
+         index.html:25 clicked child
+         index.html:21 clicked parent
+      
+ -->
