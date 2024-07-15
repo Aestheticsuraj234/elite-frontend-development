@@ -1,3 +1,11 @@
+console.log("Hello 1")
+console.log("Hello 2");
+
+// async code===>10s
+console.log("hello-3")
+
+
+
 function syncFunction() {
     console.log("Task 1");
     console.log("Task 2");
