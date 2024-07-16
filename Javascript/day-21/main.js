@@ -71,3 +71,8 @@ setTimeout(()=>{
 
 
 
+// 1. async nature mechna 
+
+setTimeout(()=>{
+    console.log("task_3") 
+},5000) // 5s
