@@ -2,7 +2,76 @@
 u receive a confirmation message but must wait for delivery. This illustrates JavaScript's asynchronous operations, which don't block the main thread during 
 Imagine ordering a pizza online; execution.
 
-Promises handle the result (success or failure) of these operations asynchronously. They act as a contract between the caller and the executor.
+PHere are the handwritten notes for `try-catch-finally` in JavaScript.
+
+---
+
+### Try-Catch-Finally
+
+**Try-Catch-Finally** is a statement that handles exceptions (errors) in JavaScript. It allows you to run code and catch any errors that occur, providing a way to handle them gracefully.
+
+#### Basic Syntax
+```javascript
+try {
+    // Code that may throw an error
+} catch (error) {
+    // Code to handle the error
+} finally {
+    // Code that will always run, regardless of an error
+}
+```
+
+#### Example 1: Handling Errors
+```javascript
+try {
+    let result = riskyFunction();
+    console.log(result);
+} catch (error) {
+    console.error('An error occurred:', error.message);
+} finally {
+    console.log('This will run no matter what.');
+}
+
+function riskyFunction() {
+    throw new Error('Something went wrong!');
+}
+```
+
+#### Example 2: Cleaning Up Resources
+```javascript
+let file;
+try {
+    file = openFile('myFile.txt');
+    // Perform operations on the file
+} catch (error) {
+    console.error('Error opening file:', error.message);
+} finally {
+    if (file) {
+        file.close();
+        console.log('File closed.');
+    }
+}
+```
+
+#### Example 3: Nested Try-Catch
+```javascript
+try {
+    try {
+        let data = JSON.parse('{"name": "John}');
+    } catch (error) {
+        console.error('JSON parsing error:', error.message);
+        throw error; // Re-throw the error
+    }
+} catch (error) {
+    console.error('Outer catch:', error.message);
+} finally {
+    console.log('Nested try-catch completed.');
+}
+```
+
+---
+
+These examples demonstrate the usage of `try-catch-finally` blocks to handle errors and perform necessary cleanup actions. Let me know if you need any more details or additional topics!romises handle the result (success or failure) of these operations asynchronously. They act as a contract between the caller and the executor.
 
 **Creating a Promise:**
 

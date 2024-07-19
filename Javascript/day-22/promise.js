@@ -66,25 +66,37 @@
 
 
 fetch("https://api.github.com/users/Aestheticsuraj234")
-.then((data)=>{
-    return data.json()
-})
-.then((data)=>{
-    console.log(data)
-})
-.catch((error)=>{
-    console.log(error)
-})
-.finally(()=>{
-    console.log("I am finally")
-})
+    .then((data) => {
+        return data.json()
+    })
+    .then((data) => {
+        console.log(data)
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+    .finally(() => {
+        console.log("I am finally")
+    })
 
 
-async function FetchGithubData(){
-let res = await fetch("https://api.github.com/users/Aestheticsuraj234");
-let data = await res.json()
-    
-console.log(data)
+// let res = await fetch("https://api.github.com/users/Aestheticsuraj234",{
+//         method:"PUT",
+//         body:JSON.stringify([{name:"Suraj"}]),
+// });
+// let data = await res.bodyUsed()
+
+async function FetchGithubData() {
+    try {
+        let res = await fetch("https://apis.github.com/users/Aestheticsuraj234");
+        let data = await res.json()
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+    finally {
+        console.log("i am always run")
+    }
 }
 
 
