@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anime Dekho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
-</body>
-</html>
 
-<!-- https://rapidapi.com/hefesto-technologies-hefesto-technologies-default/api/anime-manga-and-novels-api/playground/apiendpoint_32761c2a-48c0-45f7-8b14-8a34ce23534a -->
+<body class="bg-[#151515] h-screen px-10 py-10">
+    <nav class=" mt-6 border-1 mb-5  boder-yellow-500 px-2 py-4 text-white flex justify-center items-center">
+        <ul class="flex flex-row justify-center items-center gap-12 ">
+            <li class="hover:text-yellow-500 font-semibold text-md m-2"><a href="#">Home</a></li>
+            <li class="hover:text-yellow-500 font-semibold text-md m-2"><a href="#">Movies</a></li>
+            <li class="hover:text-yellow-500 font-semibold text-md m-2"><a href="#">Most Pouplar</a></li>
+            <li class="hover:text-yellow-500 font-semibold text-md m-2"><a href="#">TV Series</a></li>
+            <li class="hover:text-yellow-500 font-semibold text-md m-2"><a href="#">Top Airing</a></li>
+        </ul>
+    </nav>
+    <!-- hero-section -->
+
+    <section class="flex flex-col justify-center items-center px-4 py-4">
+        <div class="h-[30rem] w-[72rem] rounded-md bg-zinc-800 border-2 border-yellow-500 flex flex-row justify-between items-center  py-5">
+            <!-- l.h.s -->
+                <div class="flex flex-col justify-start items-start gap-y-4 w-[50%] px-4 py-4">
+                    <div class="flex flex-col justify-start items-start gap-y-4">
+                            <h1 class="text-3xl font-extrabold text-zinc-300">
+                                Welcome to <span class="text-yellow-500">Anime Dekho👀</span>
+                            </h1>
+                            <p class="text-lg text-zinc-500">
+                                Watch your favourite anime movies and TV series here. and enjoy the best experience of watching anime online without any ads Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora ducimus delectus consectetur, quos obcaecati placeat. Adipisci optio corporis blanditiis.
+                            </p>
+                    </div>
+                    <div class="flex flex-row justify-center items-center gap-5">
+                            <button class="flex gap-2 items-center justify-center px-4 py-3 rounded-md bg-yellow-500  hover:bg-yellow-600 text-white font-bold">
+                                <i class="fa-solid fa-circle-play"></i>
+                                Watch Now
+                            </button>
+                            <button class="px-4 py-3 rounded-md bg-zinc-700  border-white border-1 text-white">
+                                Explore More
+                                <span class="text-lg">&rarr;</span>
+                            </button>
+                    </div>
+                </div>
+            
+                <!-- r.h.s -->
+                 <div class="w-[49%] flex flex-col justify-center items-center  ">
+                        <div class="h-[25rem] w-[25rem] rounded-full bg-yellow-100 border-2  shadow-md border-yellow-500 overflow-hidden">
+                            <img src="assets/hero-new.png"  height="400" width="400" class="  object-contain mt-5"/>
+                        </div>
+                 </div>
+        </div>
+    </section>
+  
+
+    <!-- card-grid -->
+</body>
+
+</html>
