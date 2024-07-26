@@ -1,13 +1,9 @@
-// const Greeting = (props)=>{
-//     return (
-//         <h1>{props.greeting}</h1>
-//     )
-// }
+import { Card } from "./Card";
 
 const Greeting = ({greeting})=>{
     
     return (
-        <h1>{greeting}</h1>
+        <Card imageUrl="https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/b7032bf51557e1e2d786d3d7349b5f77?_a=AQAEuiZ"  Title="Hello world"/>
     )
 }
 
