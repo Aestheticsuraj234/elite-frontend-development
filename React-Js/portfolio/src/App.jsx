@@ -1,47 +1,52 @@
-import {useState ,  useEffect}from 'react';
+import {useState ,  useEffect, useRef, useMemo}from 'react';
 import { Button } from './components/ui/button';
+import Navbar from './components/Navbar';
+
+
+// let Number = new Array(4000000).fill(0).map((_,i)=>{
+//   return {
+//     index:i,
+//     isSpecialNumber:i===3900000
+//   }
+// })
+
 
 
 const App = () => {
-
-  const [title , setTitle] = useState(document.title);
   const [count , setCount] = useState(0);
+  // const [numbers , setNumbers] = useState(Number);
 
-  const onTitleChange = () => {
-    const newTitle = prompt('Enter new title');
-    if(newTitle){
-      setTitle(document.title=newTitle);
-    }
+  // const SpecialNumber = useMemo(()=>numbers.find(item=>item.isSpecialNumber === true),[numbers])
+
+
+
+
+
+  // const Btnref = useRef();
+  // const number = useRef(0);
+
+// useEffect(()=>{
+//   number.current = number.current +1;
+//   console.log(`UseEffect Rendering!... and value of Number is ${number.current}`);
+// })
+  
+const ChangeNavlink = ()=>{
+  return "About"
+}
+
+  const onIncrement = () => {
+    setCount(count + 1);
+    // Btnref.current.style.backgroundColor = "red";
   }
-
-
-  
-// *using dependency array in useEffect
-  useEffect(() => {
-
-    setTimeout(()=>{
-      setCount(count+1);
-    },2000)
-
-    console.log('useEffect called');
-
-    ()=>console.log('component unmounted');
-  },[
-    count
-  ]);
-
-  
-
 
 
   return (
     <div className='h-screen w-screen bg-gray-900 text-white flex flex-col items-center justify-center space-y-4'>
-      <h1 className='text-4xl font-bold'>Change Your Website title.</h1>
-      <Button variant={"secondary"} onClick={onTitleChange}>
-        Change Title
+     <Navbar Navlink={"Home"} />
+     {/* <p className="text-2xl font-bold text-white">I am a Special Number🚀 <span className="text-indigo-500">{SpecialNumber.index}</span></p> */}
+      <Button  variant={"outline"} size={"default"} onClick={onIncrement} className="text-black">
+        {`Count Value is ${count}`}
       </Button>
-      {/* {title} */}
-      {count}
     </div>
   )
 }
@@ -65,3 +70,14 @@ export default App
   //     console.log(error);
   //   }
   // }
+
+
+  // const nums = new Array(3000000).fill(0).map((_, i) => {
+//   return{
+//     index: i,
+//     isMagical: i===2000000
+//   }
+// });
+// const [numbers , setNumbers] = useState(nums);
+
+// const magicaNumber = useMemo(() => numbers.find(num => num.isMagical), []);
