@@ -3,22 +3,24 @@ import ReactDOM from 'react-dom/client'
 import "./global.css"
 import { GlobalProvider } from './context/GlobalContext.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from './Layout'
+// import Layout from './Layout'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
+import Layout from "./Layout"
+import User from './User'
+
 
 
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path:"",
     element:<Layout/>,
     children:[
       {
         path:"",
-        element:<Home/>
-
+        element:<Home/> 
       },
       {
         path:"/about",
@@ -29,17 +31,20 @@ const router = createBrowserRouter([
         element:<Contact/>
       },
       {
-        path:"/user:userId",
-        element:<div>User</div>
+        path:"/user/:id",
+        element:<User/>
       }
     ]
+
   }
 ])
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  
   <GlobalProvider>
-   <RouterProvider router={router}/>
+  <RouterProvider router={router} />
   </GlobalProvider>
 
 
