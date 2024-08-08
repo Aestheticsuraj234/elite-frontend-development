@@ -9,6 +9,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Layout from "./Layout"
 import User from './User'
+import Github from './Github'
 
 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:"/user/:id",
         element:<User/>
+      },
+      {
+        path:"/github",
+        element:<Github/>
       }
     ]
 
